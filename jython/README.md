@@ -22,7 +22,7 @@ For interactive work, or for running a single script, you can just use
 $ docker run -it --rm jython:2.5.3
 ```
 
-or
+respectively
 
 ```
 $ docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp jython:2.5.3 jython your-script.py
@@ -33,14 +33,14 @@ $ docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/
 
 If, for example, you would like to use `SQLAlchemy` with Postgres, `pytz` and `tzlocal`, you would use:
 
-`requirements.txt`:
+requirements.txt:
 ```
 SQLAlchemy == 0.8  # latest version to support Python 2.5
 https://pypi.python.org/packages/source/p/pytz/pytz-2015.4.tar.gz#md5=417a47b1c432d90333e42084a605d3d8  # bz2 module is missing in Jython 2.5.3
 tzlocal
 ```
 
-`Dockerfile`:
+Dockerfile:
 ```
 FROM jython:2.5.3-onbuild
 
