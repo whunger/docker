@@ -1,4 +1,4 @@
-FROM jython:2.5.3
+FROM whunger/jython:2.5.3
 
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
