@@ -1,4 +1,4 @@
-#How to use these images
+# How to use these images
 
 Using these is very similar to using the official Python images from `docker-library`. To build a
 Docker image for your own application project, just create a Dockerfile like this:
@@ -29,7 +29,7 @@ $ docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/
 ```
 
 
-##Using jip to add Java libraries
+## Using jip to add Java libraries
 
 If, for example, you would like to use `SQLAlchemy` with Postgres, `pytz` and `tzlocal`, you would use:
 
